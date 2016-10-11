@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         dirs: {
             srcJs  : 'src/js/',
-            destJS : 'asset/js/'
+            destJs : 'asset/js/'
         },
 
         concat: {
