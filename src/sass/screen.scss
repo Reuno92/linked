@@ -2,8 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import "font";
 @import "variable";
+@import "font";
 @import "animate";
 @import "generique";
 @import "state";
@@ -104,13 +104,10 @@
   font-size:2rem;
 }
 
-.comparateur tbody tr {
-  background: $grey;
-}
 
 .comparateur tbody td {
   width: 33%;
-  border-bottom:1px solid rgba(255,255,255,.75);
+  border-bottom:1px solid $grey;
   font-family: 'cabinM', arial, helvetica, sans-serif;
   font-size:1.7rem;
   text-align: center;

@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                 },
 
                 files: {
-                    'dest/resorted-foo.css': ['src/foo.css']
+                    '<%= dirs.destJs %>/screen.scss': ['src/foo.css']
                 }
             }
         }*/
