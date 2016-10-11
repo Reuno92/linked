@@ -8,15 +8,16 @@ module.exports = function(grunt) {
                 separator: ';' // permet d'ajouter un point-virgule entre chaque fichier concaténé si inexistant à la fin de chaque fichier.
             },
             dist: {
-                src: ['src/js/jquery.js', 'src/js/bootstrap.js', 'src/js/animation.js', 'src/js/product.js', 'src/js/newsletter.js'],
+                src: [ 'src/js/jquery-2.2.0.min.js', 'src/js/bootstrap.js', 'src/js/animationCSS.js', 'src/js/product.js', 'src/js/newsletter.js'],
                 dest: 'asset/js/main.js'
             }
         },
 
         uglify: {
             options: {
-                separator: ';'
+                mangle: "false"
             },
+
             dist: {
                 src: 'asset/js/main.js',
                 dest: 'asset/js/main.min.js'
