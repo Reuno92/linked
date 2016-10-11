@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Lien</title>
+    <title>Landing Page - Produit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image/x-icon" href="asset/img/favicon.png">
-    <link href="asset/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -27,6 +27,7 @@
                     <li><a href="#premium">Premium</a></li>
                     <li><a href="#platinium">Platinium</a></li>
                 </ul>
+                <!--
                 <ul class="nav navbar-nav navbar-right">
                     <select>
                         <option>Euro</option>
@@ -34,6 +35,7 @@
                         <option>Dollar US</option>
                     </select>
                 </ul>
+                -->
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -44,13 +46,15 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="newsletterModalLabel">Newsletter</h4>
             </div>
             <div class="modal-body">
                 <p>Merci pour avoir enregistrer votre adrresse mail :</p>
                 <p class="newsletter-val"></p>
-                <p>Vous pouvez à tout moment changer votre adresse, en nous contacter à notre adresse <a href="mailto:newsletter-sav@logo.com?subject=Newsletter Client">Newsletter SAV</a></p>
+                <p>Vous pouvez à tout moment changer votre adresse, en nous contacter à notre adresse <a
+                        href="mailto:newsletter-sav@logo.com?subject=Newsletter Client">Newsletter SAV</a></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,28 +100,28 @@
 
                         <table class="comparateur">
                             <thead>
-                                <tr>
-                                    <td>Prix</td>
-                                    <td>Formules</td>
-                                    <td>Économie</td>
-                                </tr>
+                            <tr>
+                                <td>Prix</td>
+                                <td>Formules</td>
+                                <td>Économie</td>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="prix">6.50<span class="devise">€</span></td>
-                                    <td class="formule">Hebdomadaire</td>
-                                    <td class="economie">-</td>
-                                </tr>
-                                <tr>
-                                    <td class="prix">18.14<span class="devise">€</span></td>
-                                    <td class="formule">Trimestre</td>
-                                    <td class="economie">7%</td>
-                                </tr>
-                                <tr>
-                                    <td class="prix">34.32<span class="devise">€</span></td>
-                                    <td class="formule">Semestre</td>
-                                    <td class="economie">12%</td>
-                                </tr>
+                            <tr>
+                                <td class="prix">6.50<span class="devise">€</span></td>
+                                <td class="formule">Hebdomadaire</td>
+                                <td class="economie">-</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">18.14<span class="devise">€</span></td>
+                                <td class="formule">Trimestre</td>
+                                <td class="economie">7%</td>
+                            </tr>
+                            <tr>
+                                <td class="prix">34.32<span class="devise">€</span></td>
+                                <td class="formule">Semestre</td>
+                                <td class="economie">12%</td>
+                            </tr>
                             </tbody>
                         </table>
                         <button type="button" class="btn btn-primary btn-lg btn-resp">J'adhère</button>
@@ -160,10 +164,11 @@
         <div class="container">
             <h1 class="newsletter-titre">Newsletter</h1>
             <p class="newsletter-argument">Gardez contact avec nous et nos denières actus sur votre boite mail.</p>
-
             <form id="input-newsletter" action="#" method="POST" role="form">
-                <input type="email" class="email input-resp" name="email" id="email" placeholder="Tapez votre mail ici pour recevoir notre newsletter.">
-                <input type="button" value="S'inscrire" class="newsletter-submit submit" data-toggle="" data-target="#newsletterModal">
+                <input type="email" class="email input-resp" name="email" id="email"
+                       placeholder="Tapez votre mail ici pour recevoir notre newsletter.">
+                <input type="button" value="S'inscrire" class="newsletter-submit submit" data-toggle=""
+                       data-target="#newsletterModal">
             </form>
         </div>
     </section>
@@ -182,6 +187,7 @@
 <script src="src/js/product.js"></script>
 <script src="src/js/newsletter.js"></script>
 -->
+
 <script src="src/js/convert.js"></script>
 </body>
 </html>

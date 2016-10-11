@@ -1,0 +1,185 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "font";
+@import "variable";
+@import "animate";
+@import "generique";
+@import "state";
+@import "menu";
+@import "responsive";
+
+.entree {
+  margin-top: 51px;
+  padding: 51px 0 51px 0;
+  min-height: 550px;
+  background: url($img_path + '/BG.png') no-repeat rgb(230, 230, 230);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.entree article {
+  margin: $vSpace;
+  text-align: center;
+  &.free {
+    .inner-article {
+      border: 3px solid $free;
+      border-bottom: 1px solid $grey;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+    }
+    & h2 {
+      color: $free;
+    }
+  }
+  &.pre {
+    .inner-article {
+      border-top: 3px solid $pre;
+      border-bottom: 1px solid $grey;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+    }
+    & h2 {
+      color: $pre;
+    }
+  }
+  &.pla {
+    .inner-article {
+
+      border-top: 3px solid $pla;
+      border-bottom: 1px solid $grey;
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+    }
+    & h2 {
+      color:$pla;
+    }
+  }
+}
+
+.inner-article {
+  padding: 15px;
+  border-radius: 1rem;
+  background: rgba(255,255,255,.75);
+  box-shadow:0 2px .3rem rgb(75,75,75);
+}
+
+.inner-article.disabled {
+  border-top: 3px solid $grey;
+  background: rgba(255, 255, 255, .50);
+  color: rgb(200, 200, 200);
+}
+
+.produit {
+  font-size : 5rem;
+}
+
+.argument {
+  margin: $vSpace;
+}
+
+.prix {
+  margin: $vSpace;
+  font-size: 2rem;
+  font-family: cabin, arial, helvetica, sans-serif;
+  &.freemium {
+    color: $free;
+    font-size:4rem;
+    font-weight: 800;
+    text-transform:uppercase;
+  }
+}
+
+.btn.btn-primary.btn-lg {
+  margin: $vSpace;
+}
+
+.comparateur {
+  width: 100%;
+}
+
+.comparateur thead td {
+  font-family: cabinB, Arial, helvetica, sans-serif;
+  font-size:2rem;
+}
+
+.comparateur tbody tr {
+  background: $grey;
+}
+
+.comparateur tbody td {
+  width: 33%;
+  border-bottom:1px solid rgba(255,255,255,.75);
+  font-family: 'cabinM', arial, helvetica, sans-serif;
+  font-size:1.7rem;
+  text-align: center;
+  border-collapse: separate;
+}
+
+.newsletter {
+  min-height: 300px;
+  background: #7f7f7f; /* Vieux machins */
+  background: -webkit-radial-gradient(bottom,#7f7f7f,#1e1e1e); /*Safari 5.1-6*/
+  background: -moz-radial-gradient(bottom,#7f7f7f,#1e1e1e); /*Fx 3.6-15*/
+  background: -o-radial-gradient(bottom,#7f7f7f,#1e1e1e); /*Opera 11.1-12*/
+  background: radial-gradient(to top, #7f7f7f, #1e1e1e); /* Standard */
+  padding: 51px 0 51px 0;
+  box-shadow:inset 0 1px 3px #000000;
+}
+
+.newsletter-titre {
+  color:#cccccc;
+}
+
+.newsletter-argument {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.email {
+  display: block;
+  min-width: 54%;
+  margin: $vSpace;
+  font-size: 2rem;
+  border: 1px solid #333333;
+  border-radius: 1.25rem;
+  background: #222222;
+  color: #cccccc;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.submit {
+  display: block;
+  width: 33%;
+  margin: 15px auto;
+}
+
+.submit, .btn.btn-default {
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+  background: transparent;
+  transition:all ease .3s;
+}
+
+
+.modal-body p {
+  color:$white;
+}
+
+.newsletter-val {
+  display:block;
+  background: $falseblack;
+  padding:1rem;
+  border-radius:1.5rem;
+  font-size: 2.5rem;
+  margin:1rem auto;
+  text-align:center;
+  color: $grey;
+}
+
+footer {
+  padding: 1rem;
+}

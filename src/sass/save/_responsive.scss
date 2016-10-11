@@ -1,0 +1,60 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    text-shadow: none;
+  }
+
+  .btn-resp, .input-resp {
+    width:70%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  h2 {
+    text-shadow: none;
+  }
+
+  .navbar-nav select {
+    width:96%;
+    margin-left: 15px;
+    font-size: 1.8rem;
+  }
+
+  .btn-resp, .input-resp {
+    width:90%;
+  }
+
+  .newsletter-argument {
+    color:$falseblack;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  h2 {
+    text-shadow: none;
+  }
+
+  .navbar-nav select {
+    width:93%;
+    margin-left: 15px;
+    font-size: 1.8rem;
+  }
+  .btn-resp, .input-resp {
+    width:100%;
+  }
+  .newsletter-argument {
+    color:$falseblack;
+  }
+}
